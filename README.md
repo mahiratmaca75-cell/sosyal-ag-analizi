@@ -1,10 +1,3 @@
----
-
-### 2. `sosyal-ag-analizi` Deposu İçin `README.md`
-
-`sosyal-ag-analizi` deposuna girip aynı şekilde `README.md` oluştur ve yapıştır:
-
-```markdown
 # 🕸️ Sosyal Ağ Analizi: Bağımlılık & Etkileşim Grafı Modeli
 
 Bu çalışma, paket bağımlılıkları ve geliştirici ekosistemleri arasındaki yapısal etkileşimleri ağ bilimi (Network Science) metrikleri kullanarak inceleyen bir sosyal ağ analizi projesidir.
@@ -12,16 +5,16 @@ Bu çalışma, paket bağımlılıkları ve geliştirici ekosistemleri arasında
 ---
 
 ## 🎯 Projenin Amacı ve Kapsamı
-Yazılım ekosistemlerindeki kütüphanelerin birbirleriyle kurduğu yönlü/yönsüz bağlantı ağını graf teorisiyle modelleyerek; ağdaki merkezi aktörleri, kritik köprü düğümleri (bottlenecks) ve kümelenme yapılarını nicel verilerle ortaya koymak.
+Yazılım ekosistemlerindeki kütüphanelerin birbirleriyle kurduğu bağlantı ağını graf teorisiyle modelleyerek; ağdaki merkezi aktörleri, kritik köprü düğümleri (bottlenecks) ve kümelenme yapılarını nicel metriklerle analiz etmek.
 
 ---
 
 ## 📊 Analiz Metrikleri ve Yöntem
 Ağ yapısı Python (`networkx`, `matplotlib`) kütüphaneleri kullanılarak aşağıdaki metrikler ekseninde analiz edilmiştir:
 
-- **Derece Merkeziliği (Degree Centrality):** Doğrudan en fazla bağımlılık ilişkisine sahip merkez paketler.
+- **Derece Merkeziliği (Degree Centrality):** Doğrudan en fazla bağlantıya/bağımlılığa sahip merkez paketler.
 - **Arasındalık Merkeziliği (Betweenness Centrality):** Ağdaki bilgi/akış yolları üzerinde köprü görevi gören kritik düğümler.
-- **Kümelenme Katsayısı (Clustering Coefficient):** Düğümlerin kendi aralarında ne derece alt topluluklar (modüler klikler) oluşturduğu.
+- **Kümelenme Katsayısı (Clustering Coefficient):** Düğümlerin kendi aralarında ne derece alt topluluklar (klikler) oluşturduğu.
 
 ---
 
